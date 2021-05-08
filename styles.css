@@ -1,0 +1,17 @@
+body {margin: 0px;}
+
+/*Footer*/
+
+
+footer {background:#F2F2F2;
+display: flex;
+width: 100%;
+justify-content: flex-start;}
+
+div {
+margin: 50px;
+margin-right: 350px;}
+
+.gras {font-weight: bold;}
+
+footer p {cursor: pointer;}
