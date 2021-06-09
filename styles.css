@@ -1,36 +1,37 @@
 /*GLOBAL*/
 
-html, body {margin: 0px; padding: 0px; width: 100%; scroll-behavior: smooth;}
+html, body { margin: 0px; padding: 0px; width: 100%; scroll-behavior: smooth; }
 
-* {box-sizing: border-box;}
+* { box-sizing: border-box; }
 
-img {cursor: pointer;}
-
-h1 {font-family: 'Raleway', sans-serif; font-weight: bold; cursor: pointer;}
-
-h2 {font-size: 16px; margin-bottom: 0px; font-family: 'Raleway', sans-serif; font-weight: bold;}
-
-p {margin-top: 5px; margin-bottom: 0px; font-family: 'Raleway', sans-serif;} 
-
-i {cursor: pointer;}
-
-button {cursor: pointer;}
-
-.stargris {color:#F2F2F2;}
+img { cursor: pointer; }
 
 
-.laclass {width: 100%;}
 
-.titreactivitesetlogo {display: flex; align-items: center; justify-content: space-between;width: 46%; margin-left: 3.3%;}
+h2 { font-size: 16px; margin-bottom: 0px; font-family: 'Raleway', sans-serif; font-weight: bold; cursor: pointer; }
+
+h3 { font-size: 16px; margin-bottom: 0; }
+
+p {	margin-top: 5px; margin-bottom: 0px; font-family: 'Raleway', sans-serif;	} 
+
+
+i.stargris {color:#F2F2F2;}
+
+.cursor {cursor: pointer;}
+
+.euro-bold {font-weight: bold;}
+
+
+
 
 /*HEADER*/
 
 header {width: 100%; 
 		display: flex;
-		flex-direction: column;
+		flex-direction: column;}
 
-	}
 
+/*NAVIGATION*/
 
 nav {		display: flex; 
 			justify-content: flex-end; 
@@ -43,96 +44,103 @@ nav {		display: flex;
 				height: 6vh;
 				left: 4%;}
 
-ul {		
-			padding-left: 0;
-			padding-bottom: 0;
+ul {		padding-left: 0;
 			padding-top: 3px;
 			margin-top: 0;
 			width: 30%; 
-			margin-right: 4%; 
+			margin-right: 5%; 
 			justify-content: space-between; 
 			display: flex; 
 			list-style:none;}
+
 
 a {		text-decoration: none; 
 		font-family: 'Raleway', sans-serif;
 		color: black; 
 		font-size: 16px; 
-		font-weight: 500; }
+		font-weight: 500; 
+		cursor: pointer;}
 
-li {height: 90px; display: flex; align-items: center; }
 
-.test a:hover {color:#0065FC; font-weight: 500; }
-.test2 a:hover {color:#0065FC; font-weight: 500;}
+/* buttons */
 
-.test {border-top: solid white; padding-left: 15px; padding-right: 15px;}
-.test2 {border-top: solid white; padding-left: 15px; padding-right: 15px;}
+li {height: 90px; display: flex; align-items: center;  }
 
-.test:hover { border-top: solid #0065FC 2px; color: #0065FC;
-				  }
-				  
 
-.test2:hover { border-top: solid #0065FC 2px; 
-				  }
+.buttons {border-top: solid white; padding : 0 20px 0 20px;}
 
-#boutonheb:hover {color: #0065FC;}
+.buttons:hover { border-top: solid #0065FC 2px; }
 
-#subscribe {	color: #0065FC; 
-				
-				font-weight: bold; }
+.buttons a:hover {color:#0065FC; font-weight: 500;}
 
-.titrepage {	font-size: 19px;
-				margin-left: 4%;
+
+#subscribe {	color: #0065FC;
+				font-weight: bold; 
+				 }
+
+.sub {margin-left:4.5%; }
+
+
+/*Page Title*/
+
+h1			 {	margin-left: 4%;
 				margin-top: 0%;
-				margin-bottom: 0.3%;	}
+				margin-bottom: 0.3%;
+				font-family: 'Raleway', sans-serif;
+				font-size: 19px;	}
 
-.accroche {margin-left: 4%;}
+.slogan {	margin-left: 4%; margin-bottom: 1.2%; }
 
 
+/*Search bar*/
 
 form {			display: flex; 
 				border-radius: 10px; 
 				height: 40px; 
-				margin-left: 3.9%; 
-				margin-top: 1.2%;}
+				margin-left: 3.9%;
+				margin-bottom: 1.5%; }
 
-.search {border:solid 2px #F2F2F2; border-right: none;}
-
-
-#locationlogo {	background:#F2F2F2; 
+i.locationlogo {background:#F2F2F2; 
 				width: 45px; 
 				display: flex; 
 				justify-content: center; 
 				align-items: center; 
-				border-radius: 10px 0 0 10px;}
+				border-radius: 10px 0 0 10px; }
 
-.submit {	background: #0065FC; 
+i.locationlogo:hover {color: #0065FC }
+
+input { border: solid 2px #F2F2F2; border-right: none;}
+
+
+button {	background: #0065FC; 
 			color: white; 
 			border:none; 
 			border-radius: 0 10px 10px 0; 
-			width: 100px;}
+			width: 100px;
+			cursor: pointer;}
 
-.recherche {align-items: center; margin-top: 0;}
+.rechercher {align-items: center; margin-top: 0;}
 
-#loupe {display: none;}
+i.glass {display: none;}
 
-/*Filtres*/
 
-.divfiltres {		display: flex; 
+/*Filters*/
+
+.divfilters {		display: flex; 
 					align-items: center; 
 					margin-left: 4.3%; 
-					margin-top: 1.5%;}
+					}
 
 
 
-.filtres { 		display flex;
+.filters { 		display flex;
 				font-weight: bold; 
 				margin-top: 0; 
 				margin-right: 26px;}
 
-.sousdiv {display: flex; flex-wrap: wrap;}
+.underdivfilters {display: flex; flex-wrap: wrap;}
 
-.iconstexts {	cursor: pointer;
+.iconstexts {	
 				display: flex; 
 				border-radius: 30px; 
 				height: 40px; 
@@ -141,12 +149,7 @@ form {			display: flex;
 				border-left: none;
 				align-items: center;}
 
-.iconstexts:hover {box-shadow: 0 0 20px #DEEBFF inset; border-left: none;}
-
-
-.iconstexts i:hover {background: white; border:solid 2px #0065FC;}
-
-
+.iconstexts:hover { box-shadow: 0 0 3.5px inset #0065FC; }
 
 
 .iconstexts i {
@@ -160,21 +163,25 @@ form {			display: flex;
 	background: #DEEBFF;
 	color: #0065FC;}
 
-.textsfiltres { margin-top: 0; 
+.iconstexts i:hover {background: white; border:solid 2px #0065FC;}
+
+
+
+.textsfilters { margin-top: 0; 
 				margin-right: 20px; 
 				font-size: 16px; 
 				font-weight: bold; 
-				font-family: 'Raleway', sans-serif; }
+				}
 
 
 /*i Info*/
 
-.disponibles {	margin-top: 2%;
+.dispo {	margin-top: 2%;
 				display: flex;
 				margin-left: 4.3%;
 				align-items: center;}
 
-.disponibles i {	margin-right: 10px;
+.dispo i {	margin-right: 10px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -186,12 +193,12 @@ form {			display: flex;
 					font-size: 11px;}
 
 
-.dispo {margin-top: 0;}
+.dispotext {margin-top: 0;}
 
-/*PARTIE MAIN*/
+/*MAIN*/
 
 
-/*div hebergement+populaire*/
+/*div Hebergements + Populars*/
 
 .hebpop {	display: flex; 
 			width: 100%; 
@@ -205,7 +212,7 @@ form {			display: flex;
 
 
 
-/*section hebergements*/
+/*Section Hebergements*/
 
 .hebergements { border-radius: 18px;
 				background-color: #F2F2F2;
@@ -215,115 +222,112 @@ form {			display: flex;
 
 
 
-#titrehebergements {margin-left: 50px; 
-					margin-bottom: 23px; 
-					font-size: 19px; 
-					margin-top: 55px;
-					} /* border: solid orange;*/
+#tittlehebergements {	margin-left: 5%;; 
+						margin-bottom: 23px; 
+						font-size: 19px; 
+						margin-top: 55px; } 
 
 
 
 
-/*div englobe reservations*/
+/*div contains reservations*/
 
-.reservationshaut {display: flex;
+.reservations {	display: flex;
 				margin: auto;
 				justify-content: space-between;
 				flex-wrap: wrap;
-				width:90%; }			/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< à voir */
+				width:90%; }			
 				
-/*
-.reservationsbas {display: flex;
-				justify-content: space-between;
-				margin-left: 50px;
-				margin-right: 50px;
-				flex-wrap: wrap;
-				width:90%;			  
-				 margin-top: 30px;} */
 
 
 
-/*les 6 réservations*/
+/*6 reservations*/
 
-.textannonces { box-shadow:0px 1px 6px; 
+.textannounces { box-shadow:0px 1px 6px; 
 				border: solid white 4px; 
 				border-radius: 18px; 
 				background-color: white; 
 				width: 31%; 
 				display: flex;
 				flex-direction: column; 
-				cursor: pointer;
 				margin-bottom: 3.5%;}
 
-.textannoncesbas {box-shadow:0px 1px 6px; 
-				border: solid white 4px; 
-				border-radius: 18px; 
-				background-color: white; 
-				width: 31%; 
-				display: flex;
-				flex-direction: column; 
-				cursor: pointer;
-				}
-
-.textannonces:hover {box-shadow: 0 0 10px;}
-.textannoncesbas:hover {box-shadow: 0 0 10px;}
+.textannounces:hover {box-shadow: 0 0 10px;}
 
 
-.imghebergement { 	border-radius: 16px 16px 0px 0px ; 
+
+.textannouncesbottom {	box-shadow:0px 1px 6px; 
+						border: solid white 4px; 
+						border-radius: 18px; 
+						background-color: white; 
+						width: 31%; 
+						display: flex;
+						flex-direction: column;	}
+
+.textannouncesbottom:hover {box-shadow: 0 0 10px;}
+
+
+
+.imghebergements { 	border-radius: 16px 16px 0px 0px ; 
 					height: 130px; 
 					width: 100%;
-					object-fit: cover;  } /*images des annonces*/
+					object-fit: cover;  } /*img announces*/
 
-.titreannonces {	margin-left: 4%; 
+.tittleannounces {	margin-left: 4%; 
 					margin-top: 3%; 
-					margin-bottom: 0%;}
+					margin-bottom: 0%; }
 
-.tarif {margin-left: 4%; font-size: 15px;}
+.prices {margin-left: 4%; font-size: 15px;}
 
 .starhebergements {font-size: 12px; color: #0065FC; margin-left: 4%; margin-bottom: 1.5%; }
 
 .afficherplus {margin-top: 35px; 
-			   margin-left: 50px; 
+			   margin-left: 5%; 
 			   font-weight: bold; 
-			   margin-bottom: 55px;}
+			   margin-bottom: 55px;
+				cursor: pointer;}
 
 
 
 
 
-/*section les plus populaires*/
+/* POPULARS */
 
-.populaires {width: 31%; 
-			display: flex; 
-			flex-direction: column; 
-			background-color: #F2F2F2; 
-			border-radius: 18px; 
-			justify-content: space-around; 
-			margin-right: 2% }
-
-
-.titrepopulaireslogo { width: 80%; 
-					   margin: auto; 
-					   margin-top: 55px; 
-					   margin-bottom: 2.2%; 
-					   display: flex; 
-					   align-items: center;}
+.populars 	{	width: 31%; 
+				display: flex; 
+				flex-direction: column; 
+				background-color: #F2F2F2; 
+				border-radius: 18px; 
+				justify-content: space-around; 
+				margin-right: 2% }
 
 
-.bourse:hover {color:#0065FC;}
+.tittlepoplogo { 	width: 80%; 
+					margin: auto; 
+					margin-top: 55px; 
+					margin-bottom: 2.2%; 
+					display: flex; 
+					align-items: center;}
 
-.titrepopulaires {	font-size: 19px;
+
+.tittlepopulars {	font-size: 19px;
 					width :50%; 
-					margin: 0px;} 
+					margin: 0px;}
 
-#bourse { margin-left: 44%; font-size: 20px; margin-top: 2px; }
+.arrowlogo { margin-left: 44%; font-size: 20px; margin-top: 2px; }
 
-.attention {display: flex; margin: auto; width: 100%;}
-.attentionbas {display: flex; margin: auto; margin-bottom: 5%; width: 100%; }
-
+.arrowlogo:hover {color:#0065FC;}
 
 
-.populairesannonces {	border: solid white 4px; 
+
+
+/*Link populars announces*/
+.urlpop {display: flex; margin: auto; width: 100%;}
+.urlpopbottom {display: flex; margin: auto; margin-bottom: 5%; width: 100%; }
+
+
+/*3 announces pop*/
+.announcespopulars {	border: solid white 4px; 
 						box-shadow:0px 1px 6px;
 						display: flex; 
 						width:80%;
@@ -334,23 +338,22 @@ form {			display: flex;
    						margin-top: 0px; 
    						cursor: pointer;} 
 
-.populairesannonces:hover {box-shadow:0px 1px 10px;}
+.announcespopulars:hover {box-shadow:0px 1px 10px;}
 
 
 
-.imgpopulaire {	object-fit: cover; 
+.imgpopulars {	object-fit: cover; 
 				width: 37%; 
 				height: 155px; 
-				border-radius: 15px 0px 0px 15px;}
+				border-radius: 15px 0px 0px 15px;} 
 
-.textpopulaire {	display: flex; 
-					flex-direction: column; 
-					margin-left: 15px;
-				}
+.textpopulars {	display: flex; 
+				flex-direction: column; 
+				margin-left: 15px; }
 
-.tarifspopulaires {font-size: 16px;}
+.pricespop {font-size: 15px;}
 
-.starpopulaires {	font-size: 12px; 
+.starpopulars {	font-size: 12px; 
 					color: #0065FC;
 					margin-top: 36%;
 
@@ -358,38 +361,39 @@ form {			display: flex;
 
 
 
-/*Section Activités*/
+/*Section Activities*/
 
-.activites {	width: 100%; 
+.activities {	width: 100%; 
 				display: flex; 
 				flex-direction: column; 
 				margin-top: 2%;
 				margin-bottom: 3%;}
 
+.tittleactivlogo {display: flex; align-items: center; justify-content: space-between;width: 46%; margin-left: 3.3%;}
 
-#titresectionactivites { 
+
+#tittlesectionact { margin-bottom: 2.5%;
 						font-size: 19px; 
 						 }
 
-#beach {display: none;}
+i.beach {display: none;} /*logo*/
 
 
-.divactivites {	display: flex;
+.divactivities {display: flex;
 				justify-content: space-between; 
 				margin-left: 3.3%; 
 				margin-right: 3.3%; }
 
+/*vieux port & calanques*/
 
-.annonceactivites {	width: 20%; 
+.announcesactbig {	width: 20%; 
 					display: flex; 
 					flex-direction: column;
 					border-radius: 18px; 
 					box-shadow:0px 1px 8px;}
 
-.annonceactivites:hover {box-shadow: 0 0 10px;}
-.pomegues:hover {box-shadow: 0 0 10px;}
-.frioul:hover {box-shadow: 0 0 10px;}
-.notredame:hover {box-shadow: 0 0 10px;}
+.announcesactbig:hover {box-shadow: 0 0 10px;}
+
 
 
 
@@ -399,10 +403,11 @@ form {			display: flex;
 					margin-bottom: 0%; 
 					border-radius: 18px 18px 0px 0px;}
 
+/*Pomègues & Frioul*/
 
-.annonceactivites2 {	width:23%;
-						display:flex; 
-						flex-direction: column;}
+.announcescenter {	width:23%;
+					display:flex; 
+					flex-direction: column;}
 
 
 .pomegues {	width: 100%; 
@@ -413,10 +418,12 @@ form {			display: flex;
 			
 			}
 
+.pomegues:hover {box-shadow: 0 0 10px;}
+
 
 .imgpomegues {  object-fit: cover; 
 				width: 100%; 
-				height: 160px; 
+				height: 170px; 
 				border-radius: 18px 18px 0px 0px;}
 
 
@@ -429,11 +436,20 @@ form {			display: flex;
 			}
 
 
+.frioul:hover {box-shadow: 0 0 10px;}
+
+
 .imgfrioul {	object-fit: cover; 
 				width: 100%; 
 				height: 133px; 
 				border-radius: 18px 18px 0px 0px;}
 
+/*Notre Dame & Parc Longchamp*/
+
+.announcesrights {	width: 23%;
+					display: flex; 
+					flex-direction: column;
+					}
 
 .notredame {	margin-bottom: 21%; 
 				box-shadow:0px 1px 8px;
@@ -443,49 +459,50 @@ form {			display: flex;
 				flex-direction: column; 
 				}
 
-
-.titreactivites {	width: 100%; 
-					padding-left: 6%; 
-					margin-top: 0%; 
-					padding-top: 5%; 
-					padding-bottom: 5%;} /*border-radius: 0px 0px 14px 14px;*/
+.notredame:hover {box-shadow: 0 0 10px;}
 
 
-.annoncesdroites {	width: 23%;
-					display: flex; 
-					flex-direction: column;
-					}
+.titles-announces-act {	width: 100%; 
+						padding-left: 6%; 
+						margin-top: 3%; 
+						margin-bottom: 4%;
+						padding-top: 0%;  } 
+
+
+
+
 
 
 /*FOOTER*/
 
-footer {background:#F2F2F2;
-display: flex;
-width: 100%;
-justify-content: flex-start;
-flex-wrap: wrap;
-padding-top: 3%; 
-padding-bottom:3%;
-}
+footer { 	background:#F2F2F2;
+			display: flex;
+			width: 100%;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			padding-top: 3%; 
+			padding-bottom:3%; }
 
 .divfooterleft {margin-right:15.7%; margin-left: 3.3%; }
 .divfooter {margin-right: 15.7%;  margin-left: 3.3%;}
 .divfooterright {margin-left: 3.3%; margin-right: 0; }
 
-.gras {font-weight: bold; margin-top: 0; cursor: pointer; margin-bottom: 20px;}
+.bold {font-weight: bold; margin-top: 0; margin-bottom: 20px;}
 
 
 
 footer p { margin-bottom: 11px; cursor: pointer;}
 
-footer h2 {}
+
 
 
 /*TABLETTE*/
 
 @media screen and (max-width: 769px) { body html {margin: 0; padding: 0;}
 										
-										.accroche {margin-bottom: 2%;}
+										/*Header*/
+
+										.slogan {margin-bottom: 2%;}
 
 										form {margin-bottom: 2%;}
 
@@ -494,40 +511,20 @@ footer h2 {}
 										
 
 
-										.divfiltres {	display: flex; 
+										.divfilters {	display: flex; 
 														align-items: flex-start;
 														margin-left: 4.3%; 
 														margin-top: 1.5%; }
 
-										.filtres { align-items: center; display: flex; margin-top: 10px;}
+										.filters { align-items: center; display: flex; margin-top: 10px;}
 
-										.sousdiv { width: 90%; flex-wrap: wrap; height: 120px;}
+										.underdivfilters { width: 90%; flex-wrap: wrap; height: 120px;}
 										
-										.disponibles {margin-bottom: 3%;}
+										.dispo {margin-bottom: 3%;}
+
+										/*heb + pop*/
 
 										.hebpop {flex-direction: column; margin-top: 0;}
-
-
-										.populaires {	width: 95%; 
-														margin: auto;
-														justify-content: space-around; 
-														border:solid 2px #F2F2F2;
-														margin-top: 4%; 
-														background: white;
-														margin-bottom: 3%;}
-
-										.titrepopulaireslogo {width: 61%;}
-
-
-										.populairesannonces {	width:60%;
-   																justify-content: flex-start; 
-   																margin-top: 0px; 
-   																cursor: pointer;
-   																margin-bottom: 3%;
-   																box-shadow: 0 0 5px;}
-
-
-
 
 										.hebergements {	
 														width: 95%;
@@ -535,36 +532,50 @@ footer h2 {}
 														margin:auto;
 														background-color:white;}
 
+										/*Populars*/
+
+										.populars {	width: 95%; 
+													margin: auto;
+													justify-content: space-around; 
+													border:solid 2px #F2F2F2;
+													margin-top: 4%; 
+													background: white;
+													margin-bottom: 3%;}
+
+										.tittlepoplogo {width: 61%;}
 
 
+										.announcespopulars {	width:60%;
+   																justify-content: flex-start; 
+   																margin-top: 0px; 
+   																cursor: pointer;
+   																margin-bottom: 3%;
+   																box-shadow: 0 0 5px;}
 
 
-										footer {padding-bottom:6%; padding-top:6%;}
+   										/*Activities*/
 
-										.divfooterleft { margin-top:0; margin-right:10%; margin-left: 3.3%; }
+   										.activities {align-items: center;}
 
-										.divfooter { margin-right: 10%; margin-left: 3.3%;}
+										.tittleactivlogo {margin-left: 0; margin-bottom: 1%;}
 
-										.divfooterright { margin-left: 3.3%; margin-right: 0; }
-
-
+										i.beach {display: block; font-size: 20px;}
 
 
+										.divactivities {	flex-direction: column; 
+															align-items: center; 
+															justify-content: space-between; 
+															margin-bottom: 3%; }
 
-										.titreactivitesetlogo {margin-left: 0; margin-bottom: 1%;}
+
+										.announcesactbig {width: 50%; margin-bottom: 3.5%;}
 
 
-										.activites {align-items: center;}
+										.announcescenter { width: 50%; margin-bottom: 3.5%;}
 
-										.divactivites {flex-direction: column; align-items: center; justify-content: space-between; margin-bottom: 3%;}
 
-										#beach {display: block; font-size: 20px;}
+										.announcesrights {width: 50%;}
 
-										.annonceactivites {width: 50%; margin-bottom: 3.5%;}
-
-										.annonceactivites2 { width: 50%; margin-bottom: 3.5%;}
-
-										.annoncesdroites {width: 50%;}
 
 										.imgactivites1 {height: 150px;}
 
@@ -575,81 +586,99 @@ footer h2 {}
 										.imgfrioul {height: 150px;}
 
 										.notredame {margin-bottom: 7%;}
+
+
+										/*FOOTER Tablet*/
+
+										footer {padding-bottom:6%; padding-top:6%;}
+
+										.divfooterleft { margin-top:0; margin-right:10%; margin-left: 3.3%; }
+
+										.divfooter { margin-right: 10%; margin-left: 3.3%;}
+
+										.divfooterright { margin-left: 3.3%; margin-right: 0; }
+
+
+									
 }
 
 										
 
-/*MOBILE*/
+/*VERSION MOBILE S CHOISIE*/
 
 @media screen and (max-width: 497px) {	html body {margin:0; padding: 0;}
 										
 									
-										/*Nav*/
+										/*HEADER*/
 										
+										#reservialogo {top: 0; left: 10px;}
+
+										#subscribe {position: absolute;
+													
+													font-size: 17px;
+													top: 19px; 
+													right: 15px;}
 
 										ul {width: 100%;
 											
+											justify-content: flex-start;
 											margin-right: 0;
 											margin-top: 70px;
 											margin-bottom: 0px;	}
 
-										li {height: 50px;}
+										li {height: 50px; }
 
-										.test {border-bottom: solid 3px #F2F2F2; padding-bottom: 10px}
-										.test2 {border-bottom: solid 3px #F2F2F2; padding-bottom: 10px;}
-
-										.test:hover {border-top: none; border-bottom:solid #0065FC 2px; }
-										.test2:hover {border-top: none; border-bottom:solid #0065FC 2px;}
-
-										.test a {width: 143px; padding-left: 10px;  }
-										.test2 a {width: 117px; padding-left: 25px;  }
-
+										.buttons {	border-bottom: solid 3px #F2F2F2; 
+													padding-bottom: 10px;
+													width: 50%;
+													height: 50px;
+													justify-content: center; }
+										.sub {margin-left: 0;}
 										
 
-										#reservialogo {top: 0; left: 10px;}
-
-										#subscribe {position: absolute;
-											
-													font-size: 17px;
-													top: 19px; 
-													right: 15px;}
+										.buttons:hover {border-top: none; border-bottom: solid #0065FC 2px; }
+										
+										
 
 										.boutonheb {font-size: 17px;}
 
 										.boutonact {font-size: 17px; }
 
-										/*Fin du Nav*/
+										/*Page Title*/
 
-										.titrepage {	margin-top:20px;
-														font-size: 21px;
-														margin-left: 8px;
-														margin-bottom: 2%;	}
+										h1			 {	margin-top:7%;
+														margin-left:3%;
+														margin-bottom: 1.5%;
+														font-size: 25px;
+														width: 88.5%;}
 
-										.accroche {margin-left: 8px; margin-bottom: 7%;}
+										.slogan {margin-left:3%; margin-bottom: 5%;}
 
 
+										/*Search Bar*/
 
+										form { margin-left:3%; margin-bottom: 5%; width :80%;}
 
-										form {margin-left: 8px; margin-bottom: 9%;}
+										input {width: 71%; height: 50px; margin-right: -13px; }
 
-										.search {width: 71%; height: 50px; margin-right: -13px; }
+										i.locationlogo {height: 50px;}
 
-										#loupe {display: block;}
-
-										#button {display: none; }
-
-										.submit{border-radius:16px; 
+										button {border-radius:16px; 
 												width: 50px;
 												height: 50px;
-
 												}
-										#locationlogo {height: 50px;}
+
+										i.glass {display: block;}
+
+										.rechercher {display: none; }
+
+										
 										
 										
 
-										/*filtres*/
+										/*Filters*/
 
-										.divfiltres { 	width: 100%; 
+										.divfilters { 	width: 100%; 
 														flex-direction: column; 
 														display: flex; 
 														align-items: flex-start; 
@@ -657,76 +686,58 @@ footer h2 {}
 														margin-bottom: 2px;
 														justify-content: space-around;}
 
-										.filtres {	margin-left: 8px; 
+										.filters {	margin-left: 3%; 
 													display: flex; 
 													margin-bottom: 13px; }
 
-										.sousdiv { flex-wrap: wrap; height: 160px; width: 100%;}
+										.underdivfilters { flex-wrap: wrap; height: 160px; width: 90.7%;}
 										
-										.iconstexts {margin-bottom: 0px; margin-left: 6px; margin-right: 0;}
+										.iconstexts { margin-left: 2.5%; margin-right: 0;}
 
-										#familial {margin-left: 15px;}
-
-										/*Disponibles*/
-
-										.disponibles {		align-items: flex-start; 
-															width: 100%; 
-															margin-left: 0;
-															margin-bottom: 25px; }
-
-										.disponibles i {	margin-right: 6px; 
-															margin-left: 6px; 
-															height: 23px;
-															align-items: center;}
-
-										.dispo {		width: 98%; 
-														margin-top: 3px;
-																												font-size: 14.2px; 
-														margin-right: 5px;}
+										#familial {margin-left:4%;}
 
 
+										/*Dispo*/
+
+										.dispo   {	align-items: flex-start; 
+													width: 97%; 
+													margin-left: 0;
+													margin-bottom: 25px; 
+													margin-left: 2.5%; }
+
+										
+
+										.dispotext {		margin-top: 3px;
+														font-size: 14.5px; 
+														}
+
+
+
+										/*Sections Heb + Pop*/
 
 										.hebpop {flex-direction: column-reverse; margin: 0px;}
 
 
-										.hebergements { border: none;
-														width: 100%;
-														margin: auto;
-														background-color: white;}
-
-										#titrehebergements {margin-left: 20px; 
-															margin-top: 8%; 
-															margin-bottom: 18px;
-															
-															font-size: 18px;}
-
-										.afficherplus {margin-top: 10px;
-														margin-left: 21px;
-														margin-bottom: 35px;}
-
-
-										.populaires {border: none;
+										.populars {border: none;
 													width:100%;
 													background-color: #F2F2F2;
 													 padding-top:2.5%;
 													 border-radius: 0px;
 													 padding-bottom: 2%}
 
-										.titrepopulaireslogo {  width: 94%;
-																margin-top: 9%; 
-																margin-left: 14px;
-																margin-bottom: 20px;
-																 }
+										.tittlepoplogo {  		width: 94%;
+																margin-top: 9%;
+																margin-bottom: 20px; }
 
 
-										.titrepopulaires {	width: 89.5%;
+										.tittlepopulars {	width: 89.5%;
 															font-size: 18px;
-
+															margin-left: 2%;
 														 }
 
-										#bourse {margin-left: 0; margin-top: 0;}
+										.arrowlogo {margin-left: 0; margin-top: 0;}
 
-										.populairesannonces {margin-bottom: 4%;
+										.announcespopulars {margin-bottom: 4%;
 															border: solid white 4px; 
 															display: flex; 
 															width:89%;
@@ -737,21 +748,34 @@ footer h2 {}
    															cursor: pointer; }
 
 
-										.imgpopulaire {	object-fit: cover; 
+										.imgpopulars {	object-fit: cover; 
 														width: 40%; 
 														height: 140px; 
 														border-radius: 15px 0px 0px 15px;}
 
 
-										.starpopulaires {margin-top: 28%;}
+										.starpopulars {margin-top: 28%;}
 
-										.reservationshaut {display: flex;
-															margin: auto;
-															flex-direction: column;
-															flex-wrap: wrap;
-															width:87%;}	
 
-										.textannonces {  
+										/*hebergements*/
+
+										.hebergements { border: none;
+														width: 100%;
+														margin: auto;
+														background-color: white;}
+
+										#tittlehebergements {	margin-left: 7%; 
+																margin-top: 8%; 
+																margin-bottom: 18px;
+																font-size: 18px;}
+
+										.reservations {	display: flex;
+														margin: auto;
+														flex-direction: column;
+														flex-wrap: wrap;
+														width:87%;	}	
+
+										.textannounces {  
 														border: solid white 4px; 
 														border-radius: 18px; 
 														background-color: white; 
@@ -761,59 +785,71 @@ footer h2 {}
 														margin-bottom: 7%;
 														cursor: pointer;}
 
-										.textannoncesbas {	
-															border: solid white 4px; 
-															border-radius: 18px; 
-															background-color: white; 
-															width: 100%; 
-															display: flex;
-															flex-direction: column; 
-															cursor: pointer;
-															margin-bottom: 7%;
-														 }
+										.textannouncesbottom {	border: solid white 4px;
+																border-radius: 18px; 
+																background-color: white; 
+																width: 100%; 
+																display: flex;
+																flex-direction: column; 
+																cursor: pointer;
+																margin-bottom: 7%; }
 
 										.imghebergement { 	border-radius: 18px 18px 0px 0px; 
 															height: 130px; 
 															object-fit: cover;  }
 
 
-										.titreactivitesetlogo {width: 100%; margin-bottom: 0;}
+										.afficherplus {margin-top: 10px;
+														margin-left: 7%;
+														margin-bottom: 35px;}
 
-										.divactivites {	flex-direction: column; 
+
+										
+										/*Activities*/
+
+										.tittleactivlogo {width: 100%; margin-bottom: 0;}
+
+										#tittlesectionact {		margin-left: 21px; 
+																margin-top: 0;
+																margin-bottom: 20px;}
+
+										i.beach {display: none;}
+
+
+										.divactivities {flex-direction: column; 
 														align-items: center; 
 														display: flex; 
 														margin: auto; 
 														width: 100%;
 														margin-bottom: 5px;}
 
-										#titresectionactivites {margin-left: 21px; 
-																margin-top: 0;
-																margin-bottom: 20px;}
 
-										#beach {display: none;}
-
-
-										.annonceactivites {width: 90%; margin-bottom: 30px;}
+										.announcesactbig {width: 90%; margin-bottom: 30px;}
 
 										.imgactivites1 {height: 130px;}
 
-										.annonceactivites2 {	width: 100%; 
-																margin: auto;
-																margin-bottom: 30px;}
+
+										.announcescenter {	width: 100%; 
+															margin: auto;
+															margin-bottom: 30px;}
 
 										.pomegues {	width: 90%; margin: auto; 
 													margin-bottom: 30px;}
 
 										.imgpomegues {height: 130px;}
 
+
 										.frioul {width: 90%; margin: auto;}
+
 										.imgfrioul {height: 130px;}
 
-										.annoncesdroites {width: 100%; margin: auto;}
+
+										.announcesrights {width: 100%; margin: auto;}
 
 										.notredame {width: 90%; margin: auto; margin-bottom: 30px;}
 
-										.pomegues {width: 90%;}
+
+										/*FOOTER Mobile*/
 
 										footer {flex-direction: column;
 												padding-bottom: 15px;}
@@ -830,7 +866,26 @@ footer h2 {}
 															margin-bottom: 30px; 
 															width: 75%;
 															margin-right: 0;}
+
 										.divfooterright {margin-left: 5%; margin-bottom: 30px;}					
 
 														}
+
+
+/*Adjustements for medium/small*/
+
+@media screen and (max-width: 376px) {	h1 { font-size: 21.9px; }
+				
+										form {width: 96.5%}
+
+										.underdivfilters {width: 100%}
 										
+										.dispotext {font-size: 14.5px; width: auto;}
+
+										.dispo i {width: 31px; height: 25px; }
+										
+}
+
+
+
+
